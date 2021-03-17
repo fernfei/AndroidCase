@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+<div id="LineEChart" style="width: 100%;height:320px;margin: 0px auto 0 auto;"></div>
+</body>
+</html>
+<script>
+    window.onload=function(){
+        InitLineEChart()
+    }
+
+    function InitLineEChart() {
+        var myChart = echarts.init(document.getElementById('LineEChart'));
+        var option = option = {
+            color: ["#3C76FB","#FEA726","#B470F9"],
+
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'cross',
+                    label: {
+                        backgroundColor: '#6a7985'
+                    }
+                }
+            },
+            legend: {
+                icon: "rectangle",
+                data: ['销售总额', '活动促销', '总盈利'],
+                itemWidth: 10,
+                itemHeight: 10,
+                x: "left",
+                y: "top"
+            },
+            toolbox: {
+
+            },
+            grid: {
+                left: '0',
+                right: '4%',
+                bottom: '3%',
+                top:'10%',
+                containLabel: true
+            },
+            xAxis: [
+                {
+                    type: 'category',
+                    boundaryGap: false,
+                    data: ['2020-07', '2020-08', '2020-09', '2020-10', '2020-11', '2020-12'],
+                    axisLabel: {
+                        show: true,
+                        textStyle: {
+                            color: 'black',  //更改坐标轴文字颜色
+                            fontSize : 12      //更改坐标轴文字大小
+                        }
+                    },
+                    axisTick: {
+                        show: false
+                    },
+                    axisLine:{
+                        lineStyle:{
+                            color:"#E5E5E5"//更改坐标轴颜色
+                        }
+                    },
+                    splitLine:{
+                        show:true     //去掉网格线
+                    }
+                },
+            ],
+            yAxis: [
+                {
+                    type: 'value',
+                    axisLabel: {
+                        show: true,
+                        textStyle: {
+                            color: 'black',  //更改坐标轴文字颜色
+                            fontSize : 12      //更改坐标轴文字大小
+                        }
+                    },
+                    splitLine: {
+                        show: true     //去掉网格线
+                    },
+                    axisLine: {
+                        lineStyle: {
+                            color: "#E5E5E5"//更改坐标轴颜色
+                        }
+                    },
+                },
+            ],
+            series: [
+                {
+                    name: '销售总额',
+                    type: 'line',
+                    areaStyle: {},
+                    data: [400, 500, 450, 550, 600, 620],
+                    smooth: true,
+                    itemStyle: {
+                        normal: {   //颜色渐变函数 前四个参数分别表示四个位置依次为左、下、右、上
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                                    offset: 1, color: 'rgba(60,118,251,.5)' // 100% 处的颜色
+                                }, {
+                                    offset: 0.5, color: 'rgba(60,118,251,.5)' // 50% 处的颜色
+                                }, {
+                                    offset: 0, color: 'rgba(60,118,251,.5)' // 0% 处的颜色
+                                }]
+                            ),  //背景渐变色
+                            lineStyle: {        // 系列级个性化折线样式
+                                width: 2,
+                                type: 'solid',
+                                color: "#3C76FB"
+                            }
+                        },
+                        emphasis: {
+                            color: '#3C76FB',
+                            lineStyle: {        // 系列级个性化折线样式
+                                width: 2,
+                                type: 'dotted',
+                                color: "#3C76FB" //折线的颜色
+                            }
+                        }
+                    },
+                    symbolSize:5, //折线点的大小
+                },
+                {
+                    name: '活动促销',
+                    type: 'line',
+                    areaStyle: {},
+                    data: [300, 50, 200, 250, 300, 350],
+                    smooth: true,
+                    itemStyle: {
+                        normal: {   //颜色渐变函数 前四个参数分别表示四个位置依次为左、下、右、上
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1,[{
+                                    offset: 1, color: 'rgba(254,167,38,.5)' // 0% 处的颜色
+                                }, {
+                                    offset: 0.5, color: 'rgba(254,167,38,.5)' // 100% 处的颜色
+                                }, {
+                                    offset: 0, color: 'rgba(254,167,38,.5)' // 100% 处的颜色
+                                }]
+                            ),  //背景渐变色
+                            lineStyle: {        // 系列级个性化折线样式
+                                width: 2,
+                                type: 'solid',
+                                color: "#FEA726"
+                            }
+                        },
+                        emphasis: {
+                            color: '#FEA726',
+                            lineStyle: {        // 系列级个性化折线样式
+                                width:2,
+                                type: 'dotted',
+                                color: "#FEA726" //折线的颜色
+                            }
+                        }
+                    },
+                    symbolSize:5, //折线点的大小
+                },
+                {
+                    name: '总盈利',
+                    type: 'line',
+                    areaStyle: {},
+                    data: [300, 350, 60, 300, 150, 100],
+                    smooth: true,
+                    itemStyle: {
+                        normal: {   //颜色渐变函数 前四个参数分别表示四个位置依次为左、下、右、上
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1,[{
+                                    offset: 1, color: 'rgba(180,112,249,.5)' // 100% 处的颜色
+                                }, {
+                                    offset: 0.5, color: 'rgba(180,112,249,.5)' // 100% 处的颜色
+                                }, {
+                                    offset: 0, color: 'rgba(180,112,249,.5)' // 0% 处的颜色
+                                }]
+                            ),  //背景渐变色
+                            lineStyle: {        // 系列级个性化折线样式
+                                width: 2,
+                                type: 'solid',
+                                color: "#B470F9"
+                            }
+                        },
+                        emphasis: {
+                            color: '#B470F9',
+                            lineStyle: {        // 系列级个性化折线样式
+                                width:2,
+                                type: 'dotted',
+                                color: "#B470F9" //折线的颜色
+                            }
+                        }
+                    },
+                    symbolSize:5, //折线点的大小
+                }
+
+            ]
+        };
+
+        myChart.setOption(option);
+    }
+</script>

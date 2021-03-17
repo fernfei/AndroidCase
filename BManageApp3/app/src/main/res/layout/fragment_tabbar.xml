@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp">
+
+     <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+         android:background="@drawable/bg_tabbar_topline"
+         android:padding="15dp">
+
+            <!--首页-->
+            <RelativeLayout
+                android:id="@+id/index_btn"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/index_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/index_unselected"
+                    />
+                <TextView
+                    android:id="@+id/index_text"
+                    android:layout_below="@id/index_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:textSize="12sp"
+                    android:layout_centerInParent="true"
+                    android:text="@string/index"/>
+
+            </RelativeLayout>
+         <!--菜单-->
+            <RelativeLayout
+                android:id="@+id/menu_btn"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/menu_icon"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:src="@drawable/menu_unselected"
+                    />
+                <TextView
+                    android:id="@+id/menu_text"
+                    android:layout_below="@+id/menu_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:layout_centerInParent="true"
+                    android:textSize="12sp"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/menu"/>
+
+            </RelativeLayout>
+         <!--我-->
+            <RelativeLayout
+                android:id="@+id/me_btn"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/me_icon"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:src="@drawable/me_unselected"
+                    />
+                <TextView
+                    android:id="@+id/me_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:layout_below="@+id/me_icon"
+                    android:layout_centerInParent="true"
+                    android:textSize="12sp"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/me"/>
+
+            </RelativeLayout>
+     </RelativeLayout>
+</RelativeLayout>

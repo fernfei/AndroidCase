@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <Button
+        android:id="@+id/Btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按钮1"
+        android:textSize="20dp"
+        android:background="#FF2222"
+        android:textColor="#FFFFFF"></Button>
+
+
+    <Button
+        android:id="@+id/Btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按钮2"
+        android:textSize="20dp"
+        android:background="@drawable/bg_radius"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/Btn1"
+        android:layout_marginTop="20dp"></Button>
+
+
+    <Button
+        android:id="@+id/Btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按钮3"
+        android:textSize="20dp"
+        android:background="@drawable/bg_stroke"
+        android:textColor="#DC0606"
+        android:layout_below="@id/Btn2"
+        android:layout_marginTop="20dp"></Button>
+
+
+    <Button
+        android:id="@+id/Btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按钮4"
+        android:textSize="20dp"
+        android:background="@drawable/press"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/Btn3"
+        android:onClick="showToast"
+        android:layout_marginTop="20dp"></Button>
+
+</RelativeLayout>

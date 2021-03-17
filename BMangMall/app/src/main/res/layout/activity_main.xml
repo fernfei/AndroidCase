@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <com.banshion.bmangmall.gesture.JDLockView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+<!--    <LinearLayout-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:gravity="center">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/login_title_tv"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/login_title"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="30sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_gravity="center_horizontal"/>-->
+<!--    </LinearLayout>-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/username_et"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:hint="@string/hint_username"-->
+<!--        android:textColor="@color/gery"-->
+<!--        android:textColorHint="@color/gery"-->
+<!--        android:paddingLeft="15dp"-->
+<!--        android:background="@drawable/bg_edittext"-->
+<!--        android:textCursorDrawable="@null"/>-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/password_et"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:hint="@string/hint_password"-->
+<!--        android:textColor="@color/gery"-->
+<!--        android:textColorHint="@color/gery"-->
+<!--        android:background="@drawable/bg_edittext"-->
+<!--        android:textCursorDrawable="@null"-->
+<!--        android:paddingLeft="15dp"-->
+<!--        android:inputType="number"-->
+<!--        android:layout_marginTop="15dp"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/login_btn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:height="10dp"-->
+<!--        android:background="@color/blue"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:text="@string/login_btn"/>-->
+</LinearLayout>

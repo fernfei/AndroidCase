@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <Button
+        android:id="@+id/Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击跳转1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        ></Button>
+
+    <Button
+        android:id="@+id/Btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击跳转2"
+        android:gravity="center"
+        android:layout_gravity="center"
+        ></Button>
+
+    <Button
+        android:id="@+id/Btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击跳转3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        ></Button>
+
+    <Button
+        android:id="@+id/Btn4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击跳转4"/>
+
+    <Button
+        android:id="@+id/Btn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击跳转5"/>
+
+    <Button
+        android:id="@+id/Btn6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击跳转6"/>
+
+    <Button
+        android:id="@+id/Btn7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击跳转7"/>
+
+    <Button
+        android:id="@+id/Btn8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击跳转8"/>
+
+
+    <Button
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WebView"/>
+
+    <Button
+        android:id="@+id/toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toast"/>
+
+
+    <Button
+        android:id="@+id/alert_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dialog"/>
+
+    <Button
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="progress"/>
+
+    <Button
+        android:id="@+id/custom_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom Dialog"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="fragment"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

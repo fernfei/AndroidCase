@@ -1,0 +1,4 @@
+include ':app', ':opencv440'
+rootProject.name = "soyuanface"
+include 'opencv'
+

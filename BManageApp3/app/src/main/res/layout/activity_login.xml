@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:src="@drawable/login_bg"
+            android:scaleType="fitXY"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp">
+
+            <TextView
+                android:id="@+id/tv_login_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:textColor="#383838"
+                android:textSize="22sp"
+                android:inputType="number"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawablePadding="15dp"
+                android:hint="@string/phone"
+                android:textColorHint="@color/grey"
+                android:textSize="16sp"
+                android:inputType="number"
+                android:clickable="true"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:background="@drawable/bg_edittext_selector"
+                android:layout_marginTop="30dp"
+                />
+
+            <EditText
+                android:id="@+id/pwd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawablePadding="15dp"
+                android:hint="@string/password"
+                android:textColorHint="@color/grey"
+                android:textSize="16sp"
+                android:clickable="true"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:background="@drawable/bg_edittext_selector"
+                android:layout_marginTop="30dp"
+                />
+
+            <EditText
+                android:id="@+id/code"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawablePadding="15dp"
+                android:hint="@string/code"
+                android:textColorHint="@color/grey"
+                android:textSize="16sp"
+                android:clickable="true"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:background="@drawable/bg_edittext_selector"
+                android:layout_marginTop="30dp"
+                />
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/grey"
+                    android:text="立即注册"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/grey"
+                    android:text="忘记密码？"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal">
+                <ImageView
+                    android:id="@+id/btn_login"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/login_btn"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

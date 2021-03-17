@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ShoesMall</string>
+    <string name="discounts">全场八折优惠</string>
+    <string name="toolbar_text">女鞋商场</string>
+</resources>

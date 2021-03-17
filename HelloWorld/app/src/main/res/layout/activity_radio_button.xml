@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/SexGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/men"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:checked="true"
+            android:textColor="#FF5722"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/women"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"
+            android:textColor="#FF5722"
+            android:textSize="20sp"/>
+
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/SexGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/SexGroup"
+        >
+        <RadioButton
+            android:id="@+id/men2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="男"
+            android:gravity="center"
+            android:button="@null"
+            android:checked="true"
+            android:background="@drawable/radio_checked"
+            android:textColor="#FF5722"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/women2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="女"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/radio_checked"
+            android:textColor="#FF5722"
+            android:textSize="20sp"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Switch>
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+</RelativeLayout>

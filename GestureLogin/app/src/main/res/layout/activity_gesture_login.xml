@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true">
+
+
+    <!--设置手势解锁时提示view-->
+    <com.banshion.gesturelogin.gesture.GestureLockDisplayView
+        android:id="@+id/display_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+      />
+
+    <TextView
+        android:id="@+id/setting_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="@string/gesture_hint"
+        android:textColor="@color/gery"
+        />
+
+    <TextView
+        android:id="@+id/hintTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="与第一次设置密码不同，请再次设置"
+        android:textColor="#FC6265"
+        android:textSize="14sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible" />
+
+    <!--手势解锁view-->
+    <com.banshion.gesturelogin.gesture.GestureLockLayout
+        android:id="@+id/gesture_view"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"/>
+
+
+    <TextView
+        android:id="@+id/reSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="重新设置"
+        android:textSize="16sp"
+        android:textColor="@color/gery"
+        android:layout_marginTop="10dp"/>
+  </LinearLayout>
+
+
+
+</RelativeLayout>

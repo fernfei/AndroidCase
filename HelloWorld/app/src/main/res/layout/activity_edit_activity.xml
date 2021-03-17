@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+    <EditText
+        android:id="@+id/UserName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="用户名"
+        android:textColor="#dedede"
+        android:textSize="15dp"
+        android:inputType="text"
+        android:background="@drawable/edit_press"
+        android:paddingLeft="10dp"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="密码"
+        android:textColor="#dedede"
+        android:textSize="15dp"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_press"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        ></EditText>
+
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/press"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:text="登录"></Button>
+
+</LinearLayout>

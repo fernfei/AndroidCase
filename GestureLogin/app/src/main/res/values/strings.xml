@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GestureLogin</string>
+    <string name="gesture_hint">绘制解锁图案</string>
+</resources>
